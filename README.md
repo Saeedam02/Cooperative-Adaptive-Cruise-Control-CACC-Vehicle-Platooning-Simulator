@@ -12,8 +12,6 @@ senses the vehicle directly ahead). This project builds both, runs the
 same disturbance through both, and measures the difference numerically —
 not just claims it.
 
-![demo placeholder — optional: add a screen recording of the plots being generated, or an animated platoon GIF](demo.gif)
-*(Optional — the actual result plots are included below and don't require any extra recording.)*
 
 ## The result (this isn't a made-up number — it's this repo's own output)
 
@@ -36,11 +34,11 @@ moving, not a hypothetical improvement.
 
 **Velocity and spacing-error time histories, ACC vs CACC:**
 
-![Platoon comparison — velocity and spacing error](platoon_comparison.png)
+![Platoon comparison — velocity and spacing error](/images/platoon_comparison.png)
 
 **String stability comparison — peak spacing error by platoon position:**
 
-![String stability comparison — peak spacing error per vehicle](string_stability_comparison.png)
+![String stability comparison — peak spacing error per vehicle](/images/string_stability_comparison.png)
 
 Run `python simulate.py --headway 0.3` yourself to see the gap widen
 further at a more aggressive (shorter) headway — a regime where ACC starts
@@ -201,6 +199,21 @@ python simulate.py --duration 60        # longer simulation window
   with a more realistic engine/brake torque model
 - **Lane-change/cut-in scenarios**: model a vehicle merging into the
   platoon mid-simulation
+
+
+## Communication & Interaction
+
+Questions, feedback, bug reports, or ideas for extending this (especially
+around the communication-imperfection or security-focused extensions
+mentioned above) are welcome.
+
+- **Open an issue** on this repo for bugs, questions, or feature requests — it keeps the discussion visible and searchable for anyone else running into the same thing
+- **Pull requests** are welcome if you want to implement one of the extension ideas yourself
+- **Email**: saeedaghamohammadi99@gmail.com — for anything you'd rather discuss directly (collaboration, research-related questions, etc.)
+
+If this project was useful or interesting, a star on the repo is always
+appreciated — it's the easiest way to signal that and helps others find it.
+
 
 ## License
 
